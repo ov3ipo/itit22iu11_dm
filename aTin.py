@@ -1,1 +1,0 @@
-print('Tui la anh Tin cubu')
