@@ -9,6 +9,7 @@ public class OneRClassifier extends BaseClassifier{
     @Override
     public void buildClassifier(Instances trainingData) throws Exception{
         // Implement OneR algorithm here
+        System.out.println("demo");
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
