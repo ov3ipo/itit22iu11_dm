@@ -1,20 +1,25 @@
 import weka.classifiers.Classifier;
 import weka.core.Instance;
-import weka.core.Instances;
 
 abstract class BaseClassifier implements IClassifier {
     protected Classifier classifier;
     protected String modelName;
 
     @Override
-    public String getModeName(){
+    public String getModeName() {
         return modelName;
     }
 
-    //Predicts the class memberships for a given instance.
     @Override
-    public double[] predictInstance(Instance instance) throws Exception{
+    public double[] predictInstance(Instance instance) throws Exception {
         return classifier.distributionForInstance(instance);
     }
 
+    @Override
+    public Classifier getClassifier() {
+        if (classifier == null) {
+            throw new IllegalStateException("Classifier has not been initialized. Did you call buildClassifier()?");
+        }
+        return classifier;
+    }
 }
