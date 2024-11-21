@@ -1,14 +1,16 @@
 import weka.core.Instances;
+import weka.classifiers.trees.J48;
 
-class DecisionTreeClassifier extends BaseClassifier {
+public class DecisionTreeClassifier extends BaseClassifier {
     public DecisionTreeClassifier() {
         modelName = "DecisionTree";
-        // Initialize your Decision Tree classifier here
     }
 
     @Override
     public void buildClassifier(Instances trainingData) throws Exception {
-        // Implement Decision Tree algorithm here
+        classifier = new J48(); //Initialize the J48 classifier
+        classifier.buildClassifier( trainingData); //Train the model
+        System.out.println("DecisionTree model built successfully.");
         throw new UnsupportedOperationException("Not implemented yet");
     }
 }
