@@ -54,6 +54,21 @@ public class HelloWeka {
             naiveBayes.buildClassifier(trainingData);
             System.out.println("Evaluating NaiveBayes Classifier...");
             evaluateModel(naiveBayes, testingData);
+
+            // Train and test Decision Tree Classifier
+            DecisionTreeClassifier decisionTree = new DecisionTreeClassifier();
+            System.out.println("Training Decision Tree Classifier...");
+            decisionTree.buildClassifier(trainingData);
+            System.out.println("Evaluating Decision Tree Classifier...");
+            evaluateModel(decisionTree, testingData);
+
+            //Train and test KNN Classifier
+            KNNClassifier knn = new KNNClassifier();
+            System.out.println("Training KNN Classifier...");
+            knn.buildClassifier(trainingData);
+            System.out.println("Evaluating KNN Classifier...");
+            evaluateModel(knn, testingData);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -66,7 +81,7 @@ public class HelloWeka {
      */
     private static void evaluateWithCrossValidation(Instances data) {
         try {
-            // Initialize classifiers
+            // Initialize OneR and NaiveBayes classifiers
             OneRClassifier oneR = new OneRClassifier();
             NaiveBayesClassifier naiveBayes = new NaiveBayesClassifier();
 
@@ -77,6 +92,19 @@ public class HelloWeka {
             // Perform 10-fold cross-validation for NaiveBayes Classifier
             System.out.println("Evaluating NaiveBayes Classifier...");
             evaluateWithCrossValidationHelper(naiveBayes, data);
+
+            // Initialize Decision Tree and KNN classifier
+            DecisionTreeClassifier decisionTree = new DecisionTreeClassifier();
+            KNNClassifier knn = new KNNClassifier();
+
+            // Perform 10-fold cross-validation for Decision Tree Classifier
+            System.out.println("Evaluating Decision Tree Classifier...");
+            evaluateWithCrossValidationHelper(decisionTree, data);
+
+            // Perform 10-fold cross-validation for KNN Classifier
+            System.out.println("Evaluating KNN Classifier...");
+            evaluateWithCrossValidationHelper(knn, data);
+
         } catch (Exception e) {
             e.printStackTrace();
         }

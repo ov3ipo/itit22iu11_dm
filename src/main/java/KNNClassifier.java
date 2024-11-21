@@ -1,14 +1,16 @@
 import weka.core.Instances;
+import weka.classifiers.lazy.IBk;
 
-class KNNClassifier extends BaseClassifier {
+public class KNNClassifier extends BaseClassifier {
     public KNNClassifier() {
         modelName = "KNN";
-        // Initialize your KNN classifier here
     }
 
     @Override
     public void buildClassifier(Instances trainingData) throws Exception {
-        // Implement KNN algorithm here
+        classifier = new IBk(); // Initialize the IBk (KNN) classifier
+        classifier.buildClassifier(trainingData); // Train the model
+        System.out.println("KNN model built successfully.");
         throw new UnsupportedOperationException("Not implemented yet");
     }
 }
