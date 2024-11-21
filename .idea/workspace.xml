@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b7abff1-cd70-46f4-b266-6e3333c5a4d8" name="Changes" comment="build framework for classifier">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DecisionTreeClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DecisionTreeClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClassificationFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClassificationFramework.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HelloWeka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloWeka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KNNClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KNNClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OneRClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OneRClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BaseClassifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BaseClassifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DecisionTreeClassifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DecisionTreeClassifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HelloWeka.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HelloWeka.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/KNNClassifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/KNNClassifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesClassifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesClassifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/OneRClassifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/OneRClassifier.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,22 +57,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloWeka.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;MinhSang&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/drissdo/Desktop/itit22iu11_dm&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloWeka.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "test-model",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/drissdo/Desktop/itit22iu11_dm",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="HelloWeka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HelloWeka" />

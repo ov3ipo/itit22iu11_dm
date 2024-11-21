@@ -6,7 +6,6 @@ public class OneRClassifier extends BaseClassifier {
     public OneRClassifier() {
         modelName = "OneR";
     }
-
     @Override
     public void buildClassifier(Instances trainingData) throws Exception {
         classifier = new OneR(); // Initialize the OneR classifier
