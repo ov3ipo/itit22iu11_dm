@@ -1,19 +1,20 @@
+import weka.core.pmml.jaxbbindings.DecisionTree;
 
 public class HelloWeka{
     public static void main(String[] args){
-        try{
+        try {
             ClassificationFramework framework = new ClassificationFramework();
 
-            framework.addClassifier(new OneRClassifier());
-
-            DataLoader loader = new DataLoader("data/training.csv");
-            loader.loadData();
-            loader.saveToArff("processed_data.arff");
+            // Add all classifiers
+            framework.addClassifier(new LinearRegressionClassifier());
+            framework.addClassifier(new SVMRegressionClassifier());
+            framework.addClassifier(new M5PTreeClassifier());
+            framework.addClassifier(new RandomForestClassifier());
 
             // Load processed data into framework
             framework.loadData("processed_data.arff");
 
-            // Train and evaluate
+            System.out.println("\n=== Starting Model Evaluation ===");
             framework.trainAndEvaluate();
         }
         catch (Exception e) {

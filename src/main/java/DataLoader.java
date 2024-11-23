@@ -4,6 +4,7 @@ import weka.core.converters.ArffSaver;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Standardize;
 import java.io.File;
+import java.util.Random;
 
 public class DataLoader {
     private Instances data;
@@ -29,6 +30,7 @@ public class DataLoader {
 
             // Print initial data statistics
             printDataStats();
+            preprocessData();
 
             return true;
         } catch (Exception e) {
@@ -106,6 +108,37 @@ public class DataLoader {
         System.out.println("\nAttributes:");
         for (int i = 0; i < data.numAttributes(); i++) {
             System.out.println("- " + data.attribute(i).name());
+        }
+    }
+
+    public void preprocessData() {
+        if (!isDataLoaded) {
+            System.err.println("Please load data first!");
+            return;
+        }
+
+        try {
+            // Remove unnecessary attributes
+            String[] attributesToRemove = {"date_time", "date_shifted", "quality_interval"};
+            for (String attr : attributesToRemove) {
+                int index = data.attribute(attr).index();
+                data.deleteAttributeAt(index);
+            }
+
+            // Set class attribute
+            data.setClassIndex(data.attribute("quality_class").index());
+
+            // Sample the dataset if it's too large
+            if (data.numInstances() > 10000) {
+                data.randomize(new Random(42));
+                Instances sampledData = new Instances(data, 0, 10000);
+                data = sampledData;
+            }
+
+            System.out.println("Data preprocessing completed.");
+            printDataStats();
+        } catch (Exception e) {
+            System.err.println("Error preprocessing data: " + e.getMessage());
         }
     }
 }
