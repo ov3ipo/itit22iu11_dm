@@ -8,9 +8,18 @@ public class DecisionTreeClassifier extends BaseClassifier {
 
     @Override
     public void buildClassifier(Instances trainingData) throws Exception {
-        classifier = new J48(); //Initialize the J48 classifier
-        classifier.buildClassifier( trainingData); //Train the model
+        classifier = new J48();
+
+        // Configure J48 parameters
+        String[] options = new String[]{
+                "-R",          // Use reduced error pruning
+                "-N", "3",     // Number of folds for reduced error pruning
+                "-M", "5"      // Higher minimum instances per leaf
+        };
+        ((J48) classifier).setOptions(options);
+
+        // Build the model
+        classifier.buildClassifier(trainingData);
         System.out.println("DecisionTree model built successfully.");
-        throw new UnsupportedOperationException("Not implemented yet");
     }
 }

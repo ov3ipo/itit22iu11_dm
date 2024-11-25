@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b7abff1-cd70-46f4-b266-6e3333c5a4d8" name="Changes" comment="build framework for classifier">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7b7abff1-cd70-46f4-b266-6e3333c5a4d8" name="Changes" comment="build algorithm">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassifierGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DecisionTreeClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DecisionTreeClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HelloWeka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloWeka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KNNClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KNNClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClassificationFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClassificationFramework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LinearRegressionClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinearRegressionClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/M5PTreeClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/M5PTreeClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RandomForestClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RandomForestClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SVMRegressionClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SVMRegressionClassifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +43,12 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/kumaekiku/itit22iu11_dm.git&quot;,
-    &quot;accountId&quot;: &quot;7201c3fa-56cd-47fd-9723-382c0e4fa536&quot;
+    &quot;accountId&quot;: &quot;3f07152b-67fc-4b0e-be67-5f018ede8408&quot;
   }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
 }</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -54,10 +60,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.ClassifierGUI.executor&quot;: &quot;Run&quot;,
     &quot;Application.HelloWeka.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;MinhSang&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;test-model&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/drissdo/Desktop/itit22iu11_dm&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -85,8 +92,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19072.14" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19072.14" />
       </set>
     </attachedChunks>
   </component>
@@ -106,6 +113,11 @@
       <workItem from="1732113428105" duration="2096000" />
       <workItem from="1732115542797" duration="41000" />
       <workItem from="1732152963931" duration="298000" />
+      <workItem from="1732257209854" duration="2468000" />
+      <workItem from="1732260864016" duration="3347000" />
+      <workItem from="1732277780960" duration="6268000" />
+      <workItem from="1732368865925" duration="3338000" />
+      <workItem from="1732497593052" duration="328000" />
     </task>
     <task id="LOCAL-00001" summary="change format repo">
       <option name="closed" value="true" />
@@ -131,7 +143,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731732843596</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="demo with OneR">
+      <option name="closed" value="true" />
+      <created>1732202877575</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732202877575</updated>
+    </task>
+    <task id="LOCAL-00005" summary="build algorithm">
+      <option name="closed" value="true" />
+      <created>1732374493059</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732374493059</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +169,8 @@
     <MESSAGE value="change format repo" />
     <MESSAGE value="add gitignore" />
     <MESSAGE value="build framework for classifier" />
-    <option name="LAST_COMMIT_MESSAGE" value="build framework for classifier" />
+    <MESSAGE value="demo with OneR" />
+    <MESSAGE value="build algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="build algorithm" />
   </component>
 </project>
