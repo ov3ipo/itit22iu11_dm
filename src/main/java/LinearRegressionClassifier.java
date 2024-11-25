@@ -38,7 +38,7 @@ public class LinearRegressionClassifier extends BaseClassifier {
 
         // Store the classifier
         classifier = lr;
-        System.out.println("LinearRegression model built successfully.");
+        System.out.println("LinearRegression model built successfully.\n");
 
         // Print model details if available
         if (lr.toString() != null && !lr.toString().isEmpty()) {

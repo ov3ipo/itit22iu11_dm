@@ -69,7 +69,7 @@ public class ClassificationFramework {
             long buildTime = System.currentTimeMillis() - startTime;
 
             // Print run information
-            System.out.println("=== Run Information ===");
+            System.out.println("=== Run Information ===\n");
             System.out.println("Scheme:       " + classifier.getClassifier().getClass().getName());
             System.out.println("Relation:     " + fullData.relationName());
             System.out.println("Instances:    " + fullData.numInstances());

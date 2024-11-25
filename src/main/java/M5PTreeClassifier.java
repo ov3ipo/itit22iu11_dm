@@ -38,7 +38,7 @@ public class M5PTreeClassifier extends BaseClassifier {
 
         // Store the classifier
         classifier = m5p;
-        System.out.println("M5P Decision Tree model built successfully.");
+        System.out.println("M5P Decision Tree model built successfully.\n");
 
         // Print model details if available
         if (m5p.toString() != null && !m5p.toString().isEmpty()) {

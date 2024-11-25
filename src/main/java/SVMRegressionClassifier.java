@@ -49,7 +49,7 @@ public class SVMRegressionClassifier extends BaseClassifier {
 
         // Store the classifier
         classifier = svm;
-        System.out.println("SVM Regression model built successfully.");
+        System.out.println("SVM Regression model built successfully.\n");
 
         // Print model details if available
         if (svm.toString() != null && !svm.toString().isEmpty()) {

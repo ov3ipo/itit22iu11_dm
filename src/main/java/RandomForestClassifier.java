@@ -34,6 +34,6 @@ public class RandomForestClassifier extends BaseClassifier {
 
         // Store the classifier
         classifier = rf;
-        System.out.println("RandomForest model built successfully.");
+        System.out.println("RandomForest model built successfully.\n");
     }
 }
