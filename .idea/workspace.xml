@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b7abff1-cd70-46f4-b266-6e3333c5a4d8" name="Changes" comment="build algorithm">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ClassifierGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClassificationFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClassificationFramework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LinearRegressionClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinearRegressionClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/M5PTreeClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/M5PTreeClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RandomForestClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RandomForestClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SVMRegressionClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SVMRegressionClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sample.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloWeka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloWeka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HelloWeka.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HelloWeka.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wind_dataset_main.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="test-model" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,7 +64,7 @@
     &quot;Application.HelloWeka.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;test-model&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/drissdo/Desktop/itit22iu11_dm&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -75,6 +75,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="HelloWeka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HelloWeka" />
@@ -119,6 +125,8 @@
       <workItem from="1732277780960" duration="6268000" />
       <workItem from="1732368865925" duration="3338000" />
       <workItem from="1732497593052" duration="328000" />
+      <workItem from="1733022539111" duration="51000" />
+      <workItem from="1733023238521" duration="1414000" />
     </task>
     <task id="LOCAL-00001" summary="change format repo">
       <option name="closed" value="true" />

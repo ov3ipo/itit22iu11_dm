@@ -1,9 +1,10 @@
-import weka.core.pmml.jaxbbindings.DecisionTree;
-
 public class HelloWeka{
     public static void main(String[] args){
         try {
             ClassificationFramework framework = new ClassificationFramework();
+            DataLoader loader = new DataLoader("data/test.csv");
+            loader.loadData();
+            loader.saveToArff("processed_data.arff");
 
             // Add all classifiers
             framework.addClassifier(new LinearRegressionClassifier());
