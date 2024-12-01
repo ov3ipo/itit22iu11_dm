@@ -8,7 +8,8 @@ public class ClassifierGUI extends JFrame {
     private ClassificationFramework framework;
     private JTextArea logArea;
     private JButton loadDataButton;
-    private JButton trainButton;
+    private JButton trainAndTestButton;
+    private JButton trainAndElButton;
     private JComboBox<String> classifierComboBox;
     private JLabel datasetLabel;
     private String currentDataPath;
@@ -45,16 +46,23 @@ public class ClassifierGUI extends JFrame {
         });
 
 
-        trainButton = new JButton("Train Model");
-        trainButton.addActionListener(e -> trainModel());
-        trainButton.setEnabled(false);
+        trainAndTestButton = new JButton("Train and Test");
+        trainAndTestButton.addActionListener(e -> trainModel1());
+        trainAndTestButton.setEnabled(false);
+
+        trainAndElButton = new JButton("Train and Evaluate");
+        trainAndElButton.addActionListener(e -> trainModel2());
+        trainAndElButton.setEnabled(false);
+
+
 
         // Add components to control panel
         controlPanel.add(loadDataButton);
         controlPanel.add(datasetLabel);
         controlPanel.add(new JLabel("Classifier:"));
         controlPanel.add(classifierComboBox);
-        controlPanel.add(trainButton);
+        controlPanel.add(trainAndTestButton);
+        controlPanel.add(trainAndElButton);
 
 
         logArea = new JTextArea();
@@ -97,7 +105,8 @@ public class ClassifierGUI extends JFrame {
             try {
                 framework.loadData(currentDataPath);
                 datasetLabel.setText("Dataset: " + selectedFile.getName());
-                trainButton.setEnabled(true);
+                trainAndTestButton.setEnabled(true);
+                trainAndElButton.setEnabled(true);
                 logArea.append("Dataset loaded successfully: " + selectedFile.getName() + "\n");
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(this,
@@ -109,7 +118,7 @@ public class ClassifierGUI extends JFrame {
         }
     }
 
-    private void trainModel() {
+    private void trainModel1() {
         String selectedClassifier = (String) classifierComboBox.getSelectedItem();
 
 
@@ -133,7 +142,64 @@ public class ClassifierGUI extends JFrame {
             }
 
             // Disable UI elements during training
-            trainButton.setEnabled(false);
+            trainAndElButton.setEnabled(false);
+            trainAndTestButton.setEnabled(false);
+            loadDataButton.setEnabled(false);
+            classifierComboBox.setEnabled(false);
+
+            // Run training in background thread
+            new SwingWorker<Void, Void>() {
+                @Override
+                protected Void doInBackground() throws Exception {
+                    framework.loadData(currentDataPath);
+                    framework.trainningAndTest();
+                    return null;
+                }
+
+                @Override
+                protected void done() {
+                    trainAndElButton.setEnabled(true);
+                    trainAndTestButton.setEnabled(true);
+                    loadDataButton.setEnabled(true);
+                    classifierComboBox.setEnabled(true);
+                }
+            }.execute();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this,
+                    "Error during training: " + e.getMessage(),
+                    "Error",
+                    JOptionPane.ERROR_MESSAGE);
+            logArea.append("Error during training: " + e.getMessage() + "\n");
+        }
+    }
+
+    private void trainModel2() {
+        String selectedClassifier = (String) classifierComboBox.getSelectedItem();
+
+
+        framework = new ClassificationFramework();
+
+        // Add selected classifier
+        try {
+            switch (selectedClassifier) {
+                case "Linear Regression":
+                    framework.addClassifier(new LinearRegressionClassifier());
+                    break;
+                case "SVM Regression":
+                    framework.addClassifier(new SVMRegressionClassifier());
+                    break;
+                case "M5P Decision Tree":
+                    framework.addClassifier(new M5PTreeClassifier());
+                    break;
+                case "Random Forest":
+                    framework.addClassifier(new RandomForestClassifier());
+                    break;
+            }
+
+            // Disable UI elements during training
+            trainAndTestButton.setEnabled(false);
+            trainAndElButton.setEnabled(false);
             loadDataButton.setEnabled(false);
             classifierComboBox.setEnabled(false);
 
@@ -148,7 +214,8 @@ public class ClassifierGUI extends JFrame {
 
                 @Override
                 protected void done() {
-                    trainButton.setEnabled(true);
+                    trainAndTestButton.setEnabled(true);
+                    trainAndElButton.setEnabled(true);
                     loadDataButton.setEnabled(true);
                     classifierComboBox.setEnabled(true);
                 }

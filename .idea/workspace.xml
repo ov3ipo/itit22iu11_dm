@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b7abff1-cd70-46f4-b266-6e3333c5a4d8" name="Changes" comment="build algorithm">
+    <list default="true" id="7b7abff1-cd70-46f4-b266-6e3333c5a4d8" name="Changes" comment="up data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sample.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HelloWeka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloWeka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HelloWeka.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HelloWeka.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wind_dataset_main.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClassificationFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClassificationFramework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClassifierGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClassifierGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +122,8 @@
       <workItem from="1732368865925" duration="3338000" />
       <workItem from="1732497593052" duration="328000" />
       <workItem from="1733022539111" duration="51000" />
-      <workItem from="1733023238521" duration="1414000" />
+      <workItem from="1733023238521" duration="2881000" />
+      <workItem from="1733028472204" duration="2833000" />
     </task>
     <task id="LOCAL-00001" summary="change format repo">
       <option name="closed" value="true" />
@@ -168,7 +165,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732374493059</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="minor change">
+      <option name="closed" value="true" />
+      <created>1733025043319</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733025043319</updated>
+    </task>
+    <task id="LOCAL-00007" summary="up data">
+      <option name="closed" value="true" />
+      <created>1733025562224</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733025562224</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +193,8 @@
     <MESSAGE value="build framework for classifier" />
     <MESSAGE value="demo with OneR" />
     <MESSAGE value="build algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="build algorithm" />
+    <MESSAGE value="minor change" />
+    <MESSAGE value="up data" />
+    <option name="LAST_COMMIT_MESSAGE" value="up data" />
   </component>
 </project>
