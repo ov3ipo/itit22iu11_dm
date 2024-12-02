@@ -1,8 +1,7 @@
-import weka.classifiers.trees.RandomForest;
 import weka.core.Instances;
 
-public class RandomForestClassifier extends BaseClassifier {
-    public RandomForestClassifier() {
+public class RandomForest extends Base {
+    public RandomForest() {
         modelName = "RandomForest";
     }
 
@@ -10,7 +9,7 @@ public class RandomForestClassifier extends BaseClassifier {
     public void buildClassifier(Instances trainingData) throws Exception {
         System.out.println("Building RandomForest classifier...");
 
-        RandomForest rf = new RandomForest();
+        weka.classifiers.trees.RandomForest rf = new weka.classifiers.trees.RandomForest();
 
         // Setting parameters as shown in the GUI
         rf.setBagSizePercent(100);

@@ -3,8 +3,8 @@ import weka.core.Instances;
 import weka.classifiers.functions.supportVector.PolyKernel;
 import weka.core.SelectedTag;
 
-public class SVMRegressionClassifier extends BaseClassifier {
-    public SVMRegressionClassifier() {
+public class SVMRegression extends Base {
+    public SVMRegression() {
         modelName = "SVM Regression";
     }
 

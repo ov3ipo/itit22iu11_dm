@@ -1,9 +1,8 @@
-import weka.classifiers.functions.LinearRegression;
 import weka.core.Instances;
 import weka.core.SelectedTag;
 
-public class LinearRegressionClassifier extends BaseClassifier {
-    public LinearRegressionClassifier() {
+public class LinearRegression extends Base {
+    public LinearRegression() {
         modelName = "LinearRegression";
     }
 
@@ -11,10 +10,10 @@ public class LinearRegressionClassifier extends BaseClassifier {
     public void buildClassifier(Instances trainingData) throws Exception {
         System.out.println("Building LinearRegression classifier...");
 
-        LinearRegression lr = new LinearRegression();
+        weka.classifiers.functions.LinearRegression lr = new weka.classifiers.functions.LinearRegression();
 
         // Setting parameters as shown in the GUI
-        lr.setAttributeSelectionMethod(new SelectedTag(1, LinearRegression.TAGS_SELECTION)); // M5 method
+        lr.setAttributeSelectionMethod(new SelectedTag(1, weka.classifiers.functions.LinearRegression.TAGS_SELECTION)); // M5 method
         lr.setBatchSize("100");
         lr.setDebug(false);
         lr.setDoNotCheckCapabilities(false);

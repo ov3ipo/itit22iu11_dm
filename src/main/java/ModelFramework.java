@@ -9,17 +9,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class ClassificationFramework {
-    private List<IClassifier> classifiers;
+public class ModelFramework {
+    private List<IModel> classifiers;
     private Instances trainingData;
     private Instances testingData;
     private Instances fullData;
 
-    public ClassificationFramework() {
+    public ModelFramework() {
         classifiers = new ArrayList<>();
     }
 
-    public void addClassifier(IClassifier classifier) {
+    public void addClassifier(IModel classifier) {
         classifiers.add(classifier);
     }
 
@@ -60,7 +60,7 @@ public class ClassificationFramework {
             throw new IllegalStateException("No data loaded. Please load data first.");
         }
 
-        for (IClassifier classifier : classifiers) {
+        for (IModel classifier : classifiers) {
             System.out.println("\n=== Starting " + classifier.getModeName() + " Evaluation ===\n");
 
             // Build classifier first
@@ -137,7 +137,7 @@ public class ClassificationFramework {
             throw new IllegalStateException("No data loaded. Please load data first.");
         }
 
-        for (IClassifier classifier : classifiers) {
+        for (IModel classifier : classifiers) {
             System.out.println("\n=== Starting " + classifier.getModeName() + " Evaluation ===\n");
 
             // Build classifier first

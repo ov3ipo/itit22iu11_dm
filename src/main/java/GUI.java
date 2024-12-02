@@ -4,8 +4,8 @@ import java.awt.*;
 import java.io.File;
 
 
-public class ClassifierGUI extends JFrame {
-    private ClassificationFramework framework;
+public class GUI extends JFrame {
+    private ModelFramework framework;
     private JTextArea logArea;
     private JButton loadDataButton;
     private JButton trainAndTestButton;
@@ -14,8 +14,8 @@ public class ClassifierGUI extends JFrame {
     private JLabel datasetLabel;
     private String currentDataPath;
 
-    public ClassifierGUI() {
-        framework = new ClassificationFramework();
+    public GUI() {
+        framework = new ModelFramework();
         initializeGUI();
     }
 
@@ -122,22 +122,22 @@ public class ClassifierGUI extends JFrame {
         String selectedClassifier = (String) classifierComboBox.getSelectedItem();
 
 
-        framework = new ClassificationFramework();
+        framework = new ModelFramework();
 
         // Add selected classifier
         try {
             switch (selectedClassifier) {
                 case "Linear Regression":
-                    framework.addClassifier(new LinearRegressionClassifier());
+                    framework.addClassifier(new LinearRegression());
                     break;
                 case "SVM Regression":
-                    framework.addClassifier(new SVMRegressionClassifier());
+                    framework.addClassifier(new SVMRegression());
                     break;
                 case "M5P Decision Tree":
                     framework.addClassifier(new M5PTreeClassifier());
                     break;
                 case "Random Forest":
-                    framework.addClassifier(new RandomForestClassifier());
+                    framework.addClassifier(new RandomForest());
                     break;
             }
 
@@ -178,22 +178,22 @@ public class ClassifierGUI extends JFrame {
         String selectedClassifier = (String) classifierComboBox.getSelectedItem();
 
 
-        framework = new ClassificationFramework();
+        framework = new ModelFramework();
 
         // Add selected classifier
         try {
             switch (selectedClassifier) {
                 case "Linear Regression":
-                    framework.addClassifier(new LinearRegressionClassifier());
+                    framework.addClassifier(new LinearRegression());
                     break;
                 case "SVM Regression":
-                    framework.addClassifier(new SVMRegressionClassifier());
+                    framework.addClassifier(new SVMRegression());
                     break;
                 case "M5P Decision Tree":
                     framework.addClassifier(new M5PTreeClassifier());
                     break;
                 case "Random Forest":
-                    framework.addClassifier(new RandomForestClassifier());
+                    framework.addClassifier(new RandomForest());
                     break;
             }
 
@@ -249,7 +249,7 @@ public class ClassifierGUI extends JFrame {
         }
 
         SwingUtilities.invokeLater(() -> {
-            ClassifierGUI gui = new ClassifierGUI();
+            GUI gui = new GUI();
             gui.setVisible(true);
         });
     }

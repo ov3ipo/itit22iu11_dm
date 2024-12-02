@@ -5,9 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b7abff1-cd70-46f4-b266-6e3333c5a4d8" name="Changes" comment="up data">
+      <change afterPath="$PROJECT_DIR$/.idea/CommonStatePersistent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClassificationFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClassificationFramework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClassifierGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClassifierGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BaseClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClassificationFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModelFramework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClassifierGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DecisionTreeClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DecisionTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloWeka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloWeka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LinearRegressionClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinearRegression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/M5PTreeClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/M5PTreeClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RandomForestClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RandomForest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SVMRegressionClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SVMRegression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BaseClassifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassificationFramework.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassifierGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassifierGUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassifierGUI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassifierGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DecisionTreeClassifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HelloWeka.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HelloWeka.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/IClassifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LinearRegressionClassifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/M5PTreeClassifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RandomForestClassifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SVMRegressionClassifier.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,23 +79,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ClassifierGUI.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HelloWeka.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/drissdo/Desktop/itit22iu11_dm&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ClassifierGUI.executor": "Run",
+    "Application.HelloWeka.executor": "Run",
+    "Maven.itit22iu11_dm [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/drissdo/Desktop/itit22iu11_dm",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data" />
@@ -124,6 +151,7 @@
       <workItem from="1733022539111" duration="51000" />
       <workItem from="1733023238521" duration="2881000" />
       <workItem from="1733028472204" duration="2833000" />
+      <workItem from="1733057473571" duration="3791000" />
     </task>
     <task id="LOCAL-00001" summary="change format repo">
       <option name="closed" value="true" />
@@ -186,6 +214,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change format repo" />

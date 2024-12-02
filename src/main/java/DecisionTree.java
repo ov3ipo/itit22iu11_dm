@@ -1,8 +1,8 @@
 import weka.core.Instances;
 import weka.classifiers.trees.J48;
 
-public class DecisionTreeClassifier extends BaseClassifier {
-    public DecisionTreeClassifier() {
+public class DecisionTree extends Base {
+    public DecisionTree() {
         modelName = "DecisionTree";
     }
 

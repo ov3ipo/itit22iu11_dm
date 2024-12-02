@@ -2,7 +2,7 @@ import weka.classifiers.Classifier;
 import weka.core.Instance;
 import weka.core.Instances;
 
-abstract class BaseClassifier implements IClassifier {
+abstract class Base implements IModel {
     protected Classifier classifier;
     protected String modelName;
 
@@ -11,13 +11,13 @@ abstract class BaseClassifier implements IClassifier {
         return modelName;
     }
 
-    @Override
-    public double[] predictInstance(Instance instance) throws Exception {
-        if (classifier == null) {
-            throw new IllegalStateException("Classifier not initialized. Call buildClassifier first.");
-        }
-        return classifier.distributionForInstance(instance);
-    }
+//    @Override
+//    public double[] predictInstance(Instance instance) throws Exception {
+//        if (classifier == null) {
+//            throw new IllegalStateException("Classifier not initialized. Call buildClassifier first.");
+//        }
+//        return classifier.distributionForInstance(instance);
+//    }
 
     @Override
     public Classifier getClassifier() {

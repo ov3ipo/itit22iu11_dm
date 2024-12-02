@@ -1,7 +1,7 @@
 import weka.classifiers.trees.M5P;
 import weka.core.Instances;
 
-public class M5PTreeClassifier extends BaseClassifier {
+public class M5PTreeClassifier extends Base {
     public M5PTreeClassifier() {
         modelName = "M5P Decision Tree";
     }
